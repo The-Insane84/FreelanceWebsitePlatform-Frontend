@@ -1,0 +1,135 @@
+/* src/FreelanceSection.css */
+.freelance-section {
+    background-color: #fff;
+    color: #000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.freelance-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.freelance-section .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.freelance-section .description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.freelance-section .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.freelance-section .service {
+    flex: 1 1 calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.freelance-section .service:hover {
+    transform: translateY(-10px);
+}
+
+.freelance-section .service-icon {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.freelance-section .service h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.freelance-section .service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Profile Form Styling */
+.profile-form-container {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .freelance-section .services {
+        flex-direction: column;
+    }
+
+    .freelance-section .service {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+
+    .profile-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
